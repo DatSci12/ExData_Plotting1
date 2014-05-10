@@ -21,6 +21,6 @@ datedhpcdata[,8] <- as.numeric(datedhpcdata[,8])
 datedhpcdata[,9] <- as.numeric(datedhpcdata[,9])
 
 # Plotting Data to display the Global Active Power against the Days histogram
-png("plot2.png", width = 480, height = 380, bg = "transparent")
+png("plot2.png", width = 480, height = 480, bg = "white")
 plot(datedhpcdata$DateTime, datedhpcdata$Global_active_power, xlab="", ylab="Global Active Power (kilowatts)", type = "l")
 dev.off()
